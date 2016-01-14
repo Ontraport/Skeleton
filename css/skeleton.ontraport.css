@@ -53,6 +53,7 @@ Skeleton Grid Size Extension
 	[class*="tablet-"].columns {
 		float: none;
 		display: inline-block;
+        vertical-align: top;
 	}
 	
 	.tablet-three.columns {
