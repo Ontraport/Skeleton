@@ -190,20 +190,6 @@ Container
     max-width: 1200px;
 }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container.container {
-    max-width: 85%;
-  }
-}
-
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container.container {
-    max-width: 80%; 
-  }
-}
-
 /* =====================================================================================================================
 Forms
 ===================================================================================================================== */
@@ -262,18 +248,16 @@ input[type="date"]:focus {
 
 .opt-page-size-tablet.opt-page-size-tablet .container,
 .opt-page-size-mobile.opt-page-size-mobile .container {
-  position: relative;
+/*
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
-.opt-page-size-tablet.opt-page-size-tablet .column,
-.opt-page-size-tablet.opt-page-size-tablet .columns,
+*/
+}
 .opt-page-size-mobile.opt-page-size-mobile .column,
 .opt-page-size-mobile.opt-page-size-mobile .columns {
   width: 100%;
-  float: left;
-  box-sizing: border-box; }
+}
 
 .opt-page-size-tablet.opt-page-size-tablet .u-cf {
 	text-align: center;
@@ -283,7 +267,7 @@ input[type="date"]:focus {
 	display: inline-block;
 }
 
-.opt-page-size-tablet.opt-page-size-tablet .opt-page-size-tablet .tablet-three.columns {
+.opt-page-size-tablet.opt-page-size-tablet .tablet-three.columns {
 	width: 21.2333333%;
 }
 .opt-page-size-tablet.opt-page-size-tablet .tablet-three.first-in-row.columns {
@@ -310,4 +294,22 @@ input[type="date"]:focus {
 .opt-page-size-mobile.opt-page-size-mobile .column,
 .opt-page-size-mobile.opt-page-size-mobile .columns {
 	margin-left: 0;
+}
+
+@media (max-width: 549px) {
+	.opt-page-size-tablet.opt-page-size-tablet .column,
+	.opt-page-size-tablet.opt-page-size-tablet .columns,
+	.opt-page-size-mobile.opt-page-size-mobile .column,
+	.opt-page-size-mobile.opt-page-size-mobile .columns,
+	.opt-page-size-tablet.opt-page-size-tablet .tablet-three.columns,
+	.opt-page-size-tablet.opt-page-size-tablet .tablet-three.first-in-row.columns,
+	.opt-page-size-tablet.opt-page-size-tablet .tablet-four.columns,
+	.opt-page-size-tablet.opt-page-size-tablet .tablet-four.first-in-row.columns,
+	.opt-page-size-tablet.opt-page-size-tablet .tablet-six.columns {
+		width: 100%;
+	}
+	
+	.container {
+		width: 85% !important;
+	}
 }
