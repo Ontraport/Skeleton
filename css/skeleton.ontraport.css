@@ -246,14 +246,6 @@ input[type="date"]:focus {
 	CUSTOM WIDTH FAKED MEDIA QUERIES
 ===================================================================================================================== */
 
-.opt-page-size-tablet.opt-page-size-tablet .container,
-.opt-page-size-mobile.opt-page-size-mobile .container {
-/*
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
-*/
-}
 .opt-page-size-mobile.opt-page-size-mobile .column,
 .opt-page-size-mobile.opt-page-size-mobile .columns {
   width: 100%;
